@@ -2,7 +2,7 @@ import streamlit as st
 from utils import UnitCashflow, waterfall_plot
 
 _, col_image, _ = st.beta_columns([1,1,1])
-col_image.image("loft_logo.png",unsafe_allow_html=True)
+col_image.image("loft_logo.png")
 
 #Título calculadora
 st.markdown(
