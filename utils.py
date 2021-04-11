@@ -14,7 +14,7 @@ def waterfall_plot(cashflow, label=""):
             x=["Mês " + str(x) for x in range(n)],
             textposition="outside",
             y=cashflow,
-            connector={"line": {"color": "black"}},
+            connector={"line": {"width": 0,"color": "black"}},
             totals = {"marker":{"color":"#ff774a", "line":{"color":"black", "width":1}}}
         )
     )

@@ -6,7 +6,7 @@ col_image.image("loft_logo.png")
 
 #Título calculadora
 st.markdown(
-    "<h1 style='text-align: center; color: #ff774a;'>Calculadora de TIR</h1>",
+    "<h1 style='text-align: center; color: #ff774a;'>Calculadora de Taxa Interna de Retorno (TIR)</h1>",
     unsafe_allow_html=True,
 )
 
@@ -29,13 +29,13 @@ st.markdown(file,unsafe_allow_html=True)
 st.write("\n")
 
 #Inputs usados na calculadora (Texto, Valor mínimo, Valor máximo, Valor inicial)
-inputs = {"renovation_time": ("Tempo de reforma", 0, 12, 0),
-          "renovation_cost": ("Valor da reforma", 0, 10 ** 6, 0),
-          "community_fee": ("Condomínio", 0, 10 ** 5, 0),
+inputs = {"renovation_time": ("Tempo de reforma (meses)", 0, 12, 3),
+          "renovation_cost": ("Valor da reforma", 0, 10 ** 6, 100000),
+          "community_fee": ("Condomínio", 0, 10 ** 5, 1000),
           "property_tax": ("IPTU", 0, 10 ** 5, 0),
-          "holding_period": ("Holding period (tempo entre as escrituras de compra e venda)", 0, 16, 0),
-          "selling_price": ("Valor de venda", 0, 10 ** 8, 0),
-          "buying_price": ("Valor de compra", 0, 10 ** 8, 0),
+          "holding_period": ("Holding period (tempo em meses entre as escrituras de compra e venda)", 0, 16, 6),
+          "selling_price": ("Valor de venda", 0, 10 ** 8, 650000),
+          "buying_price": ("Valor de compra", 0, 10 ** 8, 500000),
 }
 
 #Fazer campos lado a lado
